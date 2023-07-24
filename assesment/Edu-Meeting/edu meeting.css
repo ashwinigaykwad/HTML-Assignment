@@ -1,0 +1,629 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+div{
+    display: grid;
+    grid-template-columns: 100vh, 100vh, 100vh, 100vh, 100vh, 100vh;
+    grid-template-rows: 100%, 100%, 100%, 100%, 100%, 100%;
+}
+.header {
+    height: 40px;
+    width: 100%;
+    background-color: #1f272b;
+    color: white;
+    position: relative;
+}
+.header p{
+    margin: 9px;
+    margin-left: 80px;
+}
+em{
+    color: orange;
+}
+.header ul{
+       margin-left: 80%;
+       display: flex;
+       list-style: none;
+       margin-top: -30px;
+}
+li i{
+    color:white;
+    padding: 10px;
+}
+li i:hover{
+    color: #FC3;
+}
+nav{
+    position: -webkit-sticky;
+    z-index: 1;
+}
+.logo{
+    height: 100px;
+    width: 100%;
+    /* background:transparent; */
+    background-color: rgba(255, 255, 255, 0.226); 
+    position:absolute;
+    display: inline;
+    /* margin-top: 40px; */
+    /* z-index: 10; */
+    /* text-align: right; */
+    padding-right: 100px;
+}
+
+.logo h1{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 40px;
+    
+}
+.logo a{
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+.logo a:hover{
+    color:  #FC3;
+}
+
+.logo ul{
+    position: relative;
+    top: -50px;
+    margin-left: 50%;
+    display: flex;
+    list-style: none;
+}
+@media (max-width: 991px)  {
+    html, body{
+        overflow: hidden;
+    }
+    .header{
+        width: 28%;
+        display: wrap;
+    }
+    .header p{
+        width: 70%;
+        margin-left: 10px;
+    }
+     .logo h1{
+      font-size: 20px;        
+    }
+    .logo ul,li{
+        margin-top: 13px;
+        margin-left: 15px;
+        padding: 2px;
+        display: block;
+    }
+    .video-overlay h3,h1,p,button{
+        padding: 10px;
+        font-size: 10px;
+    width: 50%;
+    margin-top: 50px;
+    margin-left:-120px;
+    
+    }
+    .card1{
+        height: 20px
+        width:20px ;
+        display: block;
+    }
+    
+    
+}
+#bg-video{
+    width: 100%;
+}
+.video-overlay{
+    position: absolute;
+    background-color: rgba(31,39,43,0.75);
+    height: 825px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 40px;
+}
+.video-overlay h3{
+    position: relative;
+    top: 250px;
+    left: 150px;
+    color: white;
+}
+.video-overlay h1{
+    position: relative;
+    top: 100px;
+    left: 150px;
+    font-size: 40px;
+    color: white;
+}
+.video-overlay p{
+    position: relative;
+    top: -50px;
+    left: 150px;
+
+    color: white;
+}
+.video-overlay button{
+    position: relative;
+    top: -180px;
+    left: 150px;
+    height: 40px;
+    width: 140px;
+    background-color:  #a12c2f;
+    color: white;
+    border-radius: 50px;
+}
+.card1{
+    position: absolute;
+    top: 720px;
+    left: 80px;
+    height: 270px;
+    width: 400px;
+    border-radius: 20px;
+    background-image: url(service-item-bg.jpg);
+}
+.card1 img{
+    position: relative;
+    top: 40px;
+    left: 170px;
+}
+.card1 h3{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+.card1 p{
+    margin-top: -20px;
+    color: white;
+    text-align: center;
+}
+.card2{
+    position: absolute;
+    top: 720px;
+    left: 37%;
+    height: 270px;
+    width: 400px;
+    border-radius: 20px;
+    background-image: url(service-item-bg.jpg);
+}
+.card2 img{
+    position: relative;
+    top: 40px;
+    left: 170px;
+}
+.card2 h3{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+.card2 p{
+    margin-top: -20px;
+    color: white;
+    text-align: center;
+}
+.card3{
+    position: absolute;
+    top: 720px;
+    left: 68%;
+    height: 270px;
+    width: 400px;
+    border-radius: 20px;
+    background-image: url(service-item-bg.jpg);
+}
+.card3 img{
+    position: relative;
+    top: 40px;
+    left: 170px;
+}
+.card3 h3{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+.card3 p{
+    margin-top: -20px;
+    color: white;
+    text-align: center;
+}
+.upcoming-meetings{
+    height:150vh;
+    width: 100%;
+    background-image: url(meetings-page-bg.jpg);
+}
+.upcoming-meetings h2{
+    margin-top: 230px;
+    margin-left: 600px;
+    color: white;
+}
+.meeting-card{
+    position: relative;
+    top: 50px;
+    height: 400px;
+    width: 380px;
+    margin-left: 80px;
+    border-radius: 20px;
+    background-color: white;
+}
+.meeting-card h3{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.meeting-card li{
+    list-style: none;
+    margin-left: 40px;
+    padding: 10px;
+
+}
+.meeting-card a{
+    font-size: 20px;
+    text-decoration: none;
+    color:#1f272b;
+}
+.meeting-card button{
+    height: 40px;
+    width: 63%;
+    border: none;
+    margin-left: 50px;
+    color: white;
+    background-color: #a12c2f;
+    border-radius: 50px;
+}
+.meeting1{
+    position: relative;
+    top: -350px;
+    height: 380px;
+    width: 380px;
+    margin-left: 500px;
+    border-radius: 20px;
+    background-color: white;
+}
+.meeting1 img{
+    width: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.meeting2{
+    position: relative;
+    top: -730px;
+    left: 65%;
+    height: 380px;
+    width: 380px;
+    border-radius: 20px;
+    background-color: white;
+}
+.meeting2 img{
+    width: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+.meeting3{
+    position: relative;
+    top: -690px;
+    left: -34%;
+    height: 380px;
+    width: 380px;
+    margin-left: 1000px;
+    border-radius: 20px;
+    background-color: white;
+}
+.meeting3 img{
+    width: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+.meeting4{
+    position: relative;
+    top: -1070px;
+    left: -40px;
+    height: 380px;
+    width: 380px;
+    margin-left: 1000px;
+    border-radius: 20px;
+    background-color: white;
+}
+.meeting4 img{
+    width: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+.apply-bg{
+    height: 800px;
+    width: 100%;
+    background-image: url(apply-bg.jpg);
+}
+.apply1{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 200px;
+    width: 600px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.069); 
+
+}
+.apply1 h2{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.apply1 p{
+    margin-left: 40px;
+}
+.apply1 button{
+    height: 50px;
+    width: 30%;
+    border: none;
+    margin-left: 40px;
+    border-radius: 50px;
+    color: white;
+    background-color: #a12c2f;
+
+}
+.apply2{
+    position: absolute;
+    height: 200px;
+    width: 600px;
+    margin-top: 330px;
+    margin-left: 100px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.069); 
+
+}
+.apply2 h2{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.apply2 p{
+    margin-left: 40px;
+}
+.apply2 button{
+    height: 50px;
+    width: 30%;
+    border: none;
+    color: white;
+    margin-left: 40px;
+    border-radius: 50px;
+    background-color:rgb(187, 114, 19);
+
+}
+.about-edu{
+    height: 500px;
+    width: 550px;
+    margin-top: 90px;
+    margin-left: 50%;
+    border-radius: 20px;
+    background-color: white;
+}
+.about-1 h3{
+    margin-top: 10px;
+    margin-left: 10%;
+    justify-content: center;
+}
+.about-1 h3:hover{
+    color: rgb(187, 114, 19);
+    cursor: pointer;
+    
+}
+.popular h2{
+    margin-top: 100px;
+    margin-left: 40px;
+    color: white;
+}
+.popular1{
+    display: flex;
+}
+.popular-card1{
+    height: 350px;
+    width: 300px;
+    margin-inline: 30px;
+    background-color: white;
+}
+.popular-card1 img{
+    height: 150px;
+    width: 300px;
+    background-color: white;
+}
+
+.popular-card2{
+    height: 350px;
+    width: 300px;
+    margin-inline: 30px;
+
+    background-color: white;
+}
+.popular-card2 img{
+    height: 150px;
+    width: 300px;
+    background-color: white;
+}
+.popular-card3{
+    height: 350px;
+    width: 300px;
+    margin-inline: 30px;
+
+    background-color: white;
+}
+.popular-card3 img{
+    height: 150px;
+    width: 300px;
+    background-color: white;
+}
+.popular-card4{
+    height: 350px;
+    width: 300px;
+    margin-inline: 30px;
+
+    background-color: white;
+}
+.popular-card4 img{
+    height: 150px;
+    width: 300px;
+    background-color: white;
+}
+
+.courses{
+    height: 100vh;
+    width: 100%;
+    background-image: url(meetings-bg.jpg);
+}
+.university{
+    height: 100vh;
+    width: 100%;
+    background-image: url(facts-bg.jpg);
+}
+.university1{
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 20px;
+    color: white;
+}
+.success h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.success h4{
+   color: white;
+   margin-top: -10px;
+   font-size: 20px;
+}
+.success{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 100px;
+    height: 150px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 300px;
+    color: rgb(187, 114, 19);
+    background-color: rgba(255, 255, 255, 0.069); 
+}
+.success1 h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.success1 h4{
+   color: white;
+   margin-top: -10px;
+   font-size: 20px;
+}
+.success1{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 420px;
+    height: 150px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 300px;
+    color: rgb(187, 114, 19);
+    background-color: rgba(255, 255, 255, 0.069); 
+}
+.success2 h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.success2 h4{
+   color: white;
+   margin-top: -10px;
+   font-size: 20px;
+}
+.success2{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 100px;
+    height: 150px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 300px;
+    color: rgb(187, 114, 19);
+    background-color: rgba(255, 255, 255, 0.069); 
+}
+.success3 h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.success3 h4{
+   color: white;
+   margin-top: -10px;
+   font-size: 20px;
+}
+.success3{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 420px;
+    height: 150px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 300px;
+    color: rgb(187, 114, 19);
+    background-color: rgba(255, 255, 255, 0.069); 
+}
+.video-bg img{
+    margin-top: -200px;
+    margin-left: 800px;
+    border-radius: 20px;
+}
+.footer{
+    height: 100vh;
+    width: 100%;
+    background-image: url(meetings-bg.jpg);
+}
+.footer-card1{
+    height: 400px;
+    width: 900px;
+    margin-top: 50px;
+    margin-left: 100px;
+    background-color: white;
+    border-radius: 20px;
+}
+.footer-card1 h2{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.footer-card1 input{
+    height: 30px;
+    width: 250px;
+    margin-inline: 20px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-color: #1f272b;
+    border-radius: 50px;
+}
+.red-card{
+    height: 400px;
+    width: 350px;
+    margin-top: -350px;
+    border-radius: 20px;
+    background-color: #a12c2f;
+    margin-left: 110%;
+    justify-content: center;
+    color: white;
+}
+.red-card p,h3{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.footer-card1 button{
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    margin-top: 80px;
+    background-color: #a12c2f;
+}
+.footer-p{
+    color: white;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+
+
+
+
+

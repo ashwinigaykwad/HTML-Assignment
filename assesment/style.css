@@ -1,0 +1,31 @@
+body{
+    margin: 20px; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+.form input{
+    height: 18px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+select{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.radio input{
+    margin-top: 10px;
+    margin-left: 50px;
+} 
+ .checkbox input{
+    margin-top: 10px;
+    margin-left: 50px;
+} 
+button{ 
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
